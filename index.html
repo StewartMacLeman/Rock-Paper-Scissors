@@ -15,7 +15,38 @@
 
   <body>
     <main>
-      <h1>Rock, Paper or Scissors</h1>
+      <header>
+        <h1>Rock, Paper or Scissors</h1>
+        <div class="instructions">
+          <ol>
+            <li>Choose a "best out of" option.</li>
+            <li>Hit the start button to begin.</li>
+            <li>Hit reset to start over.</li>
+            <li>Enjoy!</li>
+          </ol>
+        </div>
+      </header>
+
+      <section class="game_type">
+        <button type="button" value="3" class="btn_style" id="3_game_btn">Best out of 3!</button>
+        <button type="button" value="5" class="btn_style" id="5_game_btn">Best out of 5!</button>
+      </section>
+
+      <p class="bestOfPara">Playing for the best of: __</p>
+
+      <section class="game_container">
+        <div class="imagesCon gridPart_1" id="playerImg"></div>
+        <div class="imagesCon gridPart_2" id="ComputerImg"></div>
+        <p class="scoresPara gridPart_3">Player's Score:</p>
+        <p class="scoresPara gridPart_4">Computer's Score:</p>
+        <p class="messagesPara gridPart_5">Messages Paragraph</p>
+        <button type="button" class="play_btn gridPart_6">I'm the game button</button>
+      </section>
+
+      <section class="reset_container">
+        <button type="button" class="btn_style">Reset Game!</button>
+      </section>
+
     </main>
 
   </body>
