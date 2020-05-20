@@ -60,9 +60,9 @@ function game(){
     computerImg.setAttribute( "class" , "imagesCon gridPart_2 computer_thumbsUp");
   }
 
-  let playerWinsMessage = "Player wins the round! Hit play for the next round.";
-  let computerWinsMessage = "Computer wins the round! Hit play for the next round.";
-  let drawMessage = "Draw, Hit play for the next round.";
+  let playerWinsMessage = "Player wins the round! Hit the play button for the next round.";
+  let computerWinsMessage = "Computer wins the round! Hit the play button for the next round.";
+  let drawMessage = "Draw! Hit the play button for the next round.";
 
   if ((playerRandomImg == "player_rock") && (computerRandomImg == "computer_scissors")){
     messageText.innerHTML = playerWinsMessage;
@@ -97,21 +97,25 @@ function game(){
   }
 
   if ((gameType == 3) && (playerScore == 2)){
-    messageText.innerHTML = "Player Wins Game! Now click reset to play again.";
-    playerImg.setAttribute("class" , "imagesCon gridPart_1 player_thumbsUp");
-    computerImg.setAttribute("class" , "imagesCon gridPart_2 computer_thumbsDown");
+    messageText.innerHTML = "Player Wins the Game! Click the reset button to play again.";
+    document.querySelector("#display").style.display = "none";
+    playerPara.style.backgroundColor = "green";
+    playerPara.style.color = "white";
   } else if  ((gameType == 5) && (playerScore == 3)){
-    messageText.innerHTML = "Player Wins Game! Now click reset to play again.";
-    playerImg.setAttribute("class" , "imagesCon gridPart_1 player_thumbsUp");
-    computerImg.setAttribute("class" , "imagesCon gridPart_2 computer_thumbsDown");
+    messageText.innerHTML = "Player Wins the Game! Click the reset button to play again.";
+    document.querySelector("#display").style.display = "none";
+    playerPara.style.backgroundColor = "green";
+    playerPara.style.color = "white";
   } else if ((gameType == 3) && (computerScore == 2)){
-    messageText.innerHTML = "Computer Wins Game! Never mind, click reset to try again";
-    playerImg.setAttribute("class" , "imagesCon gridPart_1 player_thumbsDown");
-    computerImg.setAttribute("class" , "imagesCon gridPart_2 computer_thumbsUp");
+    messageText.innerHTML = "Computer Wins the Game! Never mind, click the reset button to try again.";
+    document.querySelector("#display").style.display = "none";
+    computerPara.style.backgroundColor = "green";
+    computerPara.style.color = "white";
   } else if ((gameType == 5) && (computerScore == 3)){
-    messageText.innerHTML = "Computer Wins Game! Never mind, click reset to try again";
-    playerImg.setAttribute("class" , "imagesCon gridPart_1 player_thumbsDown");
-    computerImg.setAttribute("class" , "imagesCon gridPart_2 computer_thumbsUp");
+    messageText.innerHTML = "Computer Wins the Game! Never mind, click the reset button to try again.";
+    document.querySelector("#display").style.display = "none";
+    computerPara.style.backgroundColor = "green";
+    computerPara.style.color = "white";
   }
 
 }
@@ -120,10 +124,15 @@ function game(){
 
 document.querySelector("#resetGame").addEventListener( "click", reset );
 function reset(){
+  document.querySelector("#display").style.display = "inline";
   bestOfPara.innerHTML = "Playing for the best of: __";
   messageText.innerHTML = "Get Ready and good luck!";
-  playerPara.innerHTML = "Player's Score: 0"
-  computerPara.innerHTML = "Computer's Score: 0"
+  playerPara.innerHTML = "Player's Score: 0";
+  playerPara.style.backgroundColor = "rgba(128, 128, 128, 0.40)";
+  playerPara.style.color = "red";
+  computerPara.innerHTML = "Computer's Score: 0";
+  computerPara.style.backgroundColor = "rgba(128, 128, 128, 0.40)";
+  computerPara.style.color = "red";
   gameType = 0;
   playerScore = 0;
   computerScore = 0;

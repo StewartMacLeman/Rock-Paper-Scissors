@@ -46,13 +46,11 @@ ol {
 }
 /* Best-of styles--------------------------------------------------------------- */
 .game_type{
-  /* margin: 5px auto; */
   border: 2px solid red;
   border-radius: 10px;
   padding: 5px;
   display: flex;
   justify-content: space-around;
-  /* padding: 0 150px; */
   margin-bottom: 5px;
 }
 .btn_style {
@@ -71,7 +69,6 @@ ol {
   color: powderblue;
 }
 .bestOfPara {
-  /* display: none; */
   font-size: 1.5em;
   background-color: rgba(128, 128, 128, 0.40);
   border: 2px solid darkgrey;
@@ -94,10 +91,19 @@ ol {
   grid-column-gap: 20px;
   grid-row-gap: 10px;
 }
-.scoresParaP, .scoresParaC, .messagesPara, .play_btn{
+.scoresParaP, .scoresParaC, .messagesPara {
   font-size: 1.5em;
   background-color: rgba(128, 128, 128, 0.40);
   border: 2px solid darkgrey;
+  border-radius: 10px;
+  text-align: center;
+  color: red;
+  margin: 0;
+}
+.play_btn{
+  font-size: 1.5em;
+  background-color: rgba(128, 128, 128, 0.40);
+  border: 2px solid red;
   border-radius: 10px;
   text-align: center;
   color: red;
@@ -111,13 +117,11 @@ ol {
   background-position: center;
 }
 .player_thumbsUp { background-image: url(../images/player_thumbsUp.JPG); }
-.player_thumbsDown { background-image: url(../images/player_thumbsDown.JPG); }
 .player_rock { background-image: url(../images/player_rock.JPG); }
 .player_paper { background-image: url(../images/player_paper.JPG); }
 .player_scissors { background-image: url(../images/player_scissors.JPG); }
 
 .computer_thumbsUp { background-image: url(../images/computer_thumbsUp.JPG); }
-.computer_thumbsDown { background-image: url(../images/computer_thumbsDown.JPG); }
 .computer_rock { background-image: url(../images/computer_rock.JPG); }
 .computer_paper { background-image: url(../images/computer_paper.JPG); }
 .computer_scissors { background-image: url(../images/computer_scissors.JPG); }
