@@ -94,7 +94,7 @@ ol {
   grid-column-gap: 20px;
   grid-row-gap: 10px;
 }
-.scoresPara, .messagesPara, .play_btn{
+.scoresParaP, .scoresParaC, .messagesPara, .play_btn{
   font-size: 1.5em;
   background-color: rgba(128, 128, 128, 0.40);
   border: 2px solid darkgrey;
@@ -110,15 +110,25 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
 }
+.player_thumbsUp { background-image: url(../images/player_thumbsUp.JPG); }
+.player_thumbsDown { background-image: url(../images/player_thumbsDown.JPG); }
+.player_rock { background-image: url(../images/player_rock.JPG); }
+.player_paper { background-image: url(../images/player_paper.JPG); }
+.player_scissors { background-image: url(../images/player_scissors.JPG); }
+
+.computer_thumbsUp { background-image: url(../images/computer_thumbsUp.JPG); }
+.computer_thumbsDown { background-image: url(../images/computer_thumbsDown.JPG); }
+.computer_rock { background-image: url(../images/computer_rock.JPG); }
+.computer_paper { background-image: url(../images/computer_paper.JPG); }
+.computer_scissors { background-image: url(../images/computer_scissors.JPG); }
+
 .gridPart_1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  background-image: url(../images/player_thumbsUp.JPG);
 }
 .gridPart_2 {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  background-image: url(../images/computer_thumbsUp.JPG);
 }
 .gridPart_3 {
   grid-column: 1 / 2;

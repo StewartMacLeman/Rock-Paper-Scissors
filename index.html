@@ -20,7 +20,7 @@
         <div class="instructions">
           <ol>
             <li>Choose a "best out of" option.</li>
-            <li>Hit the start button to begin.</li>
+            <li>Hit the play button to begin / start another round.</li>
             <li>Hit reset to start over.</li>
             <li>Enjoy!</li>
           </ol>
@@ -28,23 +28,23 @@
       </header>
 
       <section class="game_type">
-        <button type="button" value="3" class="btn_style" id="3_game_btn">Best out of 3!</button>
-        <button type="button" value="5" class="btn_style" id="5_game_btn">Best out of 5!</button>
+        <button type="button" class="btn_style" id="game_btn_3">Best out of 3!</button>
+        <button type="button" class="btn_style" id="game_btn_5">Best out of 5!</button>
       </section>
 
       <p class="bestOfPara">Playing for the best of: __</p>
 
       <section class="game_container">
-        <div class="imagesCon gridPart_1" id="playerImg"></div>
-        <div class="imagesCon gridPart_2" id="ComputerImg"></div>
-        <p class="scoresPara gridPart_3">Player's Score:</p>
-        <p class="scoresPara gridPart_4">Computer's Score:</p>
-        <p class="messagesPara gridPart_5">Messages Paragraph</p>
-        <button type="button" class="play_btn gridPart_6">I'm the game button</button>
+        <div class="imagesCon gridPart_1 player_thumbsUp" id="playerImg"></div>
+        <div class="imagesCon gridPart_2 computer_thumbsUp" id="computerImg"></div>
+        <p class="scoresParaP gridPart_3">Player's Score: 0</p>
+        <p class="scoresParaC gridPart_4">Computer's Score: 0</p>
+        <p class="messagesPara gridPart_5">Get Ready and good luck!</p>
+        <button type="button" class="play_btn gridPart_6">Play Button!</button>
       </section>
 
       <section class="reset_container">
-        <button type="button" class="btn_style">Reset Game!</button>
+        <button type="button" class="btn_style" id="resetGame">Reset Game!</button>
       </section>
 
     </main>
